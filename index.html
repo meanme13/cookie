@@ -11,13 +11,15 @@
 </head>
 <body style="margin: 0; overflow: hidden;">
 
-    <!-- <div id="modalWindow" class="modal-window">
-        
-        <div class="buttons">
+    <div id="modalWindow" class="modal-window">
+        <span class="close-modal" id="closeModal">&#x2715;</span>
+
+        <form id="myForm">
+            <label for="textInput">Введите текст (не более 200 символов):</label><br>
+            <textarea id="textInput" name="text" rows="4" cols="50"></textarea><br>
             <button class="send-wishes btn" id="sendWishes">Отправить пожелания</button>
-            <button class="close-modal btn" id="closeModal">Закрыть окно</button>
-        </div>
-    </div> -->
+        </form>
+    </div>
 
     <button class="open-modal btn" id="openModal">Написать пожелания</button>
 

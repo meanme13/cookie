@@ -6,19 +6,29 @@
     display: none;
 }
 
+
+/* custom styles */
 .modal-window {
+    position: relative;
     z-index: 100;
     width: 100%;
     height: 100%;
     background-color: #ffffff;
+    display: none;
 }
 
-.buttons {
-    height: 70px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-weight: 30px;
+}
+
+.send-wishes {
+    position: absolute;
+    left: calc(50% - 100px);
+    bottom: 30px;
+    width: 200px;
 }
 
 .btn {
