@@ -4,6 +4,15 @@ let modalWindow = document.getElementById("modalWindow");
 let closeModal = document.getElementById("closeModal");
 let textInput = document.getElementById("textInput");
 let counter = document.getElementById("counter");
+let accessTitle = document.getElementsByClassName("a-dialog-text");
+let accessDeny = document.getElementsByClassName("a-dialog-deny-button");
+let accessAllow = document.getElementsByClassName("a-dialog-allow-button");
+
+if (accessTitle && accessAllow && accessDeny) {
+    accessTitle.innerText = "Для работы дополненной реальности требуется камера. Включить камеру?";
+    accessAllow.innerText = "Да";
+    accessDeny.innerText = "Нет";
+}
 
 openModal.addEventListener('click', () => {
     modalWindow.style.display = 'flex';
