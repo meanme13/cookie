@@ -1,178 +1,8 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Solar System</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ar.js/2.1.1/aframe-ar.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
-   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <style>
-
-        #preloader {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #000000;
-            z-index: 120;
-        }
-        p {
-            color: #d9d699;
-            font-family: Arial, sans-serif;
-            font-size: 21px;
-            padding: 20px 0;
-        }
-        .a-dialog-allow-button {
-            background-color: #d9d699;
-            color: #FFFFFF;
-        }
-
-        .a-dialog-deny-button {
-            background-color: #d9d699;
-            color: #FFFFFF;
-        }
-
-        .a-dialog-ok-button {
-            background-color: #d9d699;
-            color: #FFFFFF;
-        }
-        .a-dialog {
-            background-color: transparent;
-            left:43%;
-            top:30%;
-        }
-
-        .a-dialog-text-container {
-            background-color: transparent;
-        }
-        .a-dialog-buttons-container {
-            background-color: transparent;
-        }
-        .a-modal {
-            background-color: transparent;
-        }
-        .a-loader-title {
-            background-color: transparent;
-        }
-        div {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: transparent;
-            color: transparent;
-            z-index: 120;
-        }
-        .a-dialog-allow-button {
-            background-color: #3c6471;
-            border: 2px solid #3c649d;
-            color: #FFFFFF;
-            padding: 20px 20px;
-            width: 80%;
-            height: 75%;
-            font-size: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: .9;
-        }
-
-        .a-dialog-deny-button {
-            background-color: #3c6471;
-            border: 2px solid #3c649d;
-            color: #FFFFFF;
-            padding: 20px 20px;
-            width: 80%;
-            height: 75%;
-            font-size: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: .9;
-        }
-
-        .a-dialog-ok-button {
-            background-color: #3c6471;
-            border: 2px solid #3c649d;
-            color: #FFFFFF;
-            padding: 20px 20px;
-            width: 80%;
-            height: 75%;
-            font-size: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: .9;
-        }
-
-    </style>
-</head>
-<body>
-
-<script>
-    function preloader() {
-        const preloader = document.getElementById('preloader');
-        preloader.style.display = 'none'
-    }
-    setTimeout(preloader, 1000);
-</script>
-
-    <div id="preloader">
-        <p>put your phone in front of you</p>
-        <p>point cursor at planet</p>
-        <p>swipe to see other planets</p>
-    </div>
-
-    <div id="modalWindow" class="modal-window">
-        <span class="close-modal" id="closeModal">&#x2715;</span>
-
-        <form id="myForm">
-            <label for="textInput">Введите текст (не более 200 символов):</label><br>
-            <textarea id="textInput" name="text" rows="4" cols="50"></textarea><br>
-            <button class="send-wishes btn" id="sendWishes">Отправить пожелания</button>
-        </form>
-    </div>
-
-    <button class="open-modal btn" id="openModal">Написать пожелания</button>
-
-    <a-scene
-            device-orientation-permission-ui="denyButtonText: deny motion sensors; allowButtonText: allow motion sensors;"
-        vr-mode-ui="enabled: false;"
-        renderer="logarithmicDepthBuffer: true;"
-        embedded
-        arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
-
-        <a-camera position="0 2 6"></a-camera>
-
-    </a-scene>
-
-    <script src="app.js"></script>
-</body>
-</html> -->
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script> -->
     <script src="https://raw.githack.com/AR-js-org/AR.js/3.3.3-es6-beta-02/aframe/build/aframe-ar.js"></script>
@@ -183,20 +13,26 @@
     <script src="https://cdn.jsdelivr.net/npm/aframe-extras@7.1.0/dist/aframe-extras.min.js"></script>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;700&family=Noto+Sans:wght@400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div id="modalWindow" class="modal-window">
         <span class="close-modal" id="closeModal">&#x2715;</span>
 
-        <form id="myForm">
-            <label for="textInput">Введите текст (не более 200 символов):</label><br>
-            <textarea id="textInput" name="text" rows="4" cols="50"></textarea><br>
-            <button class="send-wishes btn" id="sendWishes">Отправить пожелания</button>
+        <form id="form" class="form">
+            <!-- <label for="textInput">Введите текст (не более 200 символов):</label><br> -->
+            <p class="form-title">Введите текст пожелания</p>
+            <p id="counter" class="form-subtitle">(не более 200 символов)</p>
+            <textarea id="textInput" name="text"></textarea><br>
+            <button class="send-wishes btn" id="sendWishes">Отправить пожелание</button>
         </form>
     </div>
 
-    <button class="open-modal btn" id="openModal">Написать пожелания</button>
+    <button class="open-modal btn" id="openModal">Написать пожелание</button>
 
     <a-scene embedded arjs vr-mode-ui="enabled: false">
 
