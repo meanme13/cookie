@@ -6,8 +6,11 @@
     display: none;
 }
 
-
 /* custom styles */
+body {
+    overflow: hidden;
+}
+
 .modal-window {
     position: relative;
     z-index: 100;
@@ -22,6 +25,7 @@
     top: 20px;
     right: 20px;
     font-weight: 30px;
+    cursor: pointer;
 }
 
 .send-wishes {
