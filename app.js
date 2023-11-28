@@ -17,3 +17,9 @@ textInput.addEventListener('input', () => {
     let charCount = textInput.value.length;
     counter.innerText = `( ${charCount} / 200 )`;
 });
+
+function preloader() {
+    const preloader = document.getElementById('preloader');
+    preloader.style.display = 'none'
+}
+setTimeout(preloader, 5000);
