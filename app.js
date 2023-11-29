@@ -29,4 +29,10 @@ function preloader() {
     const preloader = document.getElementById('preloader');
     preloader.style.display = 'none'
 }
+
+function addScale() {
+    openModal.classList.add('scale');
+}
+
+setTimeout(addScale, 10000);
 setTimeout(preloader, 5000);

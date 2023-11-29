@@ -175,4 +175,10 @@ textarea {
     bottom: 30px;
     width: 200px;
     z-index: 90;
+    scale: 0;
+    transition: 0.5s;
+}
+
+.scale {
+    scale: 1;
 }
