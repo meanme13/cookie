@@ -1,5 +1,6 @@
 
 let openModal = document.getElementById("openModal");
+let reloadPage = document.getElementById("reloadPage");
 let modalWindow = document.getElementById("modalWindow");
 let closeModal = document.getElementById("closeModal");
 let textInput = document.getElementById("textInput");
@@ -32,6 +33,7 @@ function preloader() {
 
 function addScale() {
     openModal.classList.add('scale');
+    reloadPage.classList.add('scale');
 }
 
 setTimeout(addScale, 10000);

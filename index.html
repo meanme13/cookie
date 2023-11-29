@@ -14,14 +14,29 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/normalize.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;700&family=Noto+Sans:wght@400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/circe" rel="stylesheet">
 </head>
 <body>
 
     <div id="preloader" class="preloader">
-        <div class="wheel"></div>
+        <!-- <div class="wheel"></div> -->
+
+        <div class="spinner">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div class="bar4"></div>
+            <div class="bar5"></div>
+            <div class="bar6"></div>
+            <div class="bar7"></div>
+            <div class="bar8"></div>
+            <div class="bar9"></div>
+            <div class="bar10"></div>
+            <div class="bar11"></div>
+            <div class="bar12"></div>
+        </div>
+
+        <p class="preloader-text">Загружаем предсказание</p>
     </div>
 
     <div id="modalWindow" class="modal-window">
@@ -36,7 +51,8 @@
         </form>
     </div>
 
-    <button class="open-modal btn" id="openModal">Написать пожелание</button>
+    <button class="open-modal btn" id="openModal">Отправить предсказание себе на следующий год</button>
+    <p class="reload-page" id="reloadPage">Получить предсказание еще раз</p>
 
     <a-scene embedded arjs vr-mode-ui="enabled: false">
 
