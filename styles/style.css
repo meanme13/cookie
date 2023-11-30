@@ -39,6 +39,6 @@ textarea {
 @media (max-width: 375px) {
     textarea {
         width: 82%;
-        height: 255px;
+        height: 205px;
     }
 }

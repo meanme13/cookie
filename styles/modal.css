@@ -18,7 +18,7 @@
     position: absolute;
     top: 31px;
     right: 26px;
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;
     color: #DECFC6;
 }
@@ -27,5 +27,6 @@
     .close-modal {
         top: 21px;
         right: 16px;
+        font-size: 15px;
     }
 }
