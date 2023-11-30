@@ -32,13 +32,13 @@
 
 @media (max-width: 375px) {
     .open-modal {
-        bottom: 91px;
+        bottom: 81px;
         height: 49px;
         font-size: 13px;
     }
 
     .reload-page {
-        bottom: 56px;
+        bottom: 46px;
         font-size: 13px;
     }
 }

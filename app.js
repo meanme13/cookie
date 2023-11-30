@@ -18,6 +18,7 @@ openModal.addEventListener('click', () => {
 });
 
 reloadPage.addEventListener('click', () => {
+    preloader.style.display = 'flex';
     location.reload();
 });
 
