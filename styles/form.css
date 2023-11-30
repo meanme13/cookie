@@ -50,7 +50,7 @@
     .send-wishes {
         position: absolute;
         left: calc(50% - 110px);
-        bottom: 46px;
+        bottom: 26px;
         width: 220px;
         height: 39px;
     }
