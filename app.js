@@ -5,13 +5,7 @@ let modalWindow = document.getElementById("modalWindow");
 let closeModal = document.getElementById("closeModal");
 let textInput = document.getElementById("textInput");
 let counter = document.getElementById("counter");
-let accessTitle = document.getElementsByClassName("a-dialog-text");
-let accessDeny = document.getElementsByClassName("a-dialog-deny-button");
-let accessAllow = document.getElementsByClassName("a-dialog-allow-button");
-
-accessTitle.innerText = "Для работы дополненной реальности требуется камера. Включить камеру?";
-accessAllow.innerText = "Да";
-accessDeny.innerText = "Нет";
+let preloader = document.getElementById('preloader');
 
 openModal.addEventListener('click', () => {
     modalWindow.style.display = 'flex';
@@ -31,8 +25,7 @@ textInput.addEventListener('input', () => {
     counter.innerText = `( ${charCount} / 700 )`;
 });
 
-function preloader() {
-    const preloader = document.getElementById('preloader');
+function preloaderToggle() {
     preloader.style.display = 'none'
 }
 
@@ -42,4 +35,4 @@ function addScale() {
 }
 
 setTimeout(addScale, 10000);
-setTimeout(preloader, 5000);
+setTimeout(preloaderToggle, 5000);
