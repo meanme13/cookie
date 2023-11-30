@@ -1,0 +1,40 @@
+#arjsDebugUIContainer {
+    display: none;
+}
+
+.a-enter-vr-button {
+    display: none;
+}
+
+.a-dialog {
+    border-radius: 17px;
+    background-color: #F6E5DA;
+}
+
+.a-dialog-text {
+    text-align: center;
+    font-family: 'Circe', sans-serif;
+    font-size: 14px;
+}
+
+.a-dialog-allow-button {
+    background-color: #CBB199;
+}
+
+.a-dialog-deny-button {
+    background-color: #DECFC6;
+}
+
+.a-dialog-allow-button, .a-dialog-deny-button, .a-dialog-ok-button {
+    font-family: 'Circe', sans-serif;
+    color: #000000;
+    border-radius: 5px;
+    font-weight: 11px;
+    padding: 20px 20px;
+    width: 80%;
+    height: 75%;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

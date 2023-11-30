@@ -1,0 +1,44 @@
+.open-modal {
+    position: absolute;
+    left: calc(50% - 183px);
+    bottom: 131px;
+    width: 366px;
+    height: 59px;
+    z-index: 90;
+    scale: 0;
+    transition: 0.3s;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.reload-page {
+    text-align: center;
+    margin: 0;
+    text-decoration: underline;
+    color: #DECFC6;
+    font-size: 15px;
+    position: absolute;
+    bottom: 96px;
+    left: 0;
+    scale: 0;
+    width: 100%;
+    z-index: 90;
+    transition: 0.3s;
+}
+
+.scale {
+    scale: 1;
+}
+
+@media (max-width: 375px) {
+    .open-modal {
+        bottom: 111px;
+        height: 49px;
+        font-size: 13px;
+    }
+
+    .reload-page {
+        bottom: 76px;
+        font-size: 13px;
+    }
+}

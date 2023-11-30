@@ -17,13 +17,17 @@ openModal.addEventListener('click', () => {
     modalWindow.style.display = 'flex';
 });
 
+reloadPage.addEventListener('click', () => {
+    location.reload();
+});
+
 closeModal.addEventListener('click', () => {
     modalWindow.style.display = 'none';
 });
 
 textInput.addEventListener('input', () => {
     let charCount = textInput.value.length;
-    counter.innerText = `( ${charCount} / 200 )`;
+    counter.innerText = `( ${charCount} / 700 )`;
 });
 
 function preloader() {
