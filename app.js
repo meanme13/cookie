@@ -10,7 +10,7 @@ AFRAME.registerComponent("start-anim", {
 
             model.setAttribute("animation-mixer", "clip: cock; clampWhenFinished: true; loop: once");
             model2.setAttribute("animation-mixer", "clip: paper; clampWhenFinished: true; loop: once");
-        }, 5100);
+        }, 6000);
     }
 });
 
