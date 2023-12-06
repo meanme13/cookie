@@ -50,26 +50,17 @@
     <button class="open-modal btn" id="openModal">Отправить предсказание на следующий год</button>
     <p class="reload-page" id="reloadPage">Получить предсказание еще раз</p>
 
-    <a-scene embedded arjs vr-mode-ui="enabled: false">
+    <a-scene embedded arjs vr-mode-ui="enabled: false" start-anim>
 
         <a-assets>
-            <a-asset-item id="animatedModel" src="models/robot.glb"></a-asset-item>
-
-            <a-cubemap id="cubemap">
-                <img src="cubeMap/negx.jpg">
-                <img src="cubeMap/negy.jpg">
-                <img src="cubeMap/negz.jpg">
-                <img src="cubeMap/posx.jpg">
-                <img src="cubeMap/posy.jpg">
-                <img src="cubeMap/posz.jpg">
-            </a-cubemap>
+            <a-asset-item id="animatedModel" src="models/cocky.glb"></a-asset-item>
         </a-assets>
 
         <a-entity camera position="0 0 5"></a-entity>
 
         <a-entity
             light="type: directional;
-                intensity: 0.5;
+                intensity: 0.2;
                 castShadow: true;
                 shadowMapHeight:2048;
                 shadowMapWidth:2048;
@@ -80,17 +71,34 @@
             shadow>
         </a-entity>
 
-        <!-- <a-light type="ambient" intensity="0.3" color="#ffffff"></a-light> -->
+        <!-- <a-light type="ambient" intensity="0.3" color="#c30010"></a-light> -->
+        <a-light type="ambient" intensity="0.3" color="#ffffff"></a-light>
 
-        <a-light type="probe" envMap="#cubemap" intensity="0.3"></a-light>
+        <!-- <a-light type="probe" envMap="#cubemap" intensity="0.3"></a-light> -->
 
         <a-entity
             id="model"
             gltf-model="#animatedModel"
             scale="1 1 1"
-            position="0 0 -5"
-            animation-mixer="clip: pockets; loop: repeat"
-            shadow="receive: false">
+            position="0 0 -2"
+            visible="false"
+            shadow="receive: false"
+            cube-env-map="path: cubeMap/;
+                 extension: jpg;
+                 reflectivity: 0.2;"
+            >
+        </a-entity>
+        
+        <a-entity
+            id="model2"
+            scale="1 1 1"
+            position="0 0 -2"
+            visible="false"
+            shadow="receive: false"
+            cube-env-map="path: cubeMap/;
+                 extension: jpg;
+                 reflectivity: 0.9;"
+            >
         </a-entity>
         
     </a-scene>

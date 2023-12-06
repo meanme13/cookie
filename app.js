@@ -1,3 +1,25 @@
+AFRAME.registerComponent("start-anim", {
+    init: function () {
+        const model = document.getElementById('model');
+        const model2 = document.getElementById('model2');
+        model2.setAttribute("gltf-model", `models/p${ Math.floor(Math.random() * 10) }.glb`);
+
+        setTimeout(() => {
+            model.setAttribute("visible", true);
+            model2.setAttribute("visible", true);
+
+            model.setAttribute("animation-mixer", "clip: cock; clampWhenFinished: true; loop: once");
+            model2.setAttribute("animation-mixer", "clip: paper; clampWhenFinished: true; loop: once");
+        }, 5100);
+    }
+});
+
+
+/**
+ * code above is responsible for random wish and models animation
+ * code below is responsible for other standard logic like preloader, modal window etc.
+ */
+
 
 let openModal = document.getElementById("openModal");
 let reloadPage = document.getElementById("reloadPage");
