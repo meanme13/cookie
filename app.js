@@ -2,7 +2,15 @@ AFRAME.registerComponent("start-anim", {
     init: function () {
         const model = document.getElementById('model');
         const model2 = document.getElementById('model2');
-        model2.setAttribute("gltf-model", `models/p${ Math.floor(Math.random() * 10) }.glb`);
+        const model3 = document.getElementById('model3');
+        let preloader = document.getElementById('preloader');
+        model2.setAttribute("gltf-model", `models/p${ Math.floor(Math.random() * 10) + 1 }.glb`);
+
+        if (model && model2 && model3) {
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 7500);
+        }
 
         setTimeout(() => {
             model.setAttribute("visible", true);
@@ -10,14 +18,16 @@ AFRAME.registerComponent("start-anim", {
 
             model.setAttribute("animation-mixer", "clip: cock; clampWhenFinished: true; loop: once");
             model2.setAttribute("animation-mixer", "clip: paper; clampWhenFinished: true; loop: once");
-        }, 6000);
+        }, 8000);
     }
 });
 
+const videoElement = document.getElementsByTagName("video");
+videoElement.controls = false;
 
 /**
- * code above is responsible for random wish and models animation
- * code below is responsible for other standard logic like preloader, modal window etc.
+ * code above is responsible for preloader, random wish and models animation
+ * code below is responsible for other standard logic like button, modal window etc.
  */
 
 
@@ -27,7 +37,6 @@ let modalWindow = document.getElementById("modalWindow");
 let closeModal = document.getElementById("closeModal");
 let textInput = document.getElementById("textInput");
 let counter = document.getElementById("counter");
-let preloader = document.getElementById('preloader');
 
 openModal.addEventListener('click', () => {
     modalWindow.style.display = 'flex';
@@ -47,14 +56,9 @@ textInput.addEventListener('input', () => {
     counter.innerText = `( ${charCount} / 700 )`;
 });
 
-function preloaderToggle() {
-    preloader.style.display = 'none'
-}
-
 function addScale() {
     openModal.classList.add('scale');
     reloadPage.classList.add('scale');
 }
 
 setTimeout(addScale, 10000);
-setTimeout(preloaderToggle, 5000);
