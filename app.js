@@ -77,7 +77,7 @@ let counter = document.getElementById("counter");
 
 openModal.addEventListener('click', () => {
     // modalWindow.style.display = 'flex';
-    window.location.href = 'https://aton.riders.agency/index_4.html';
+    window.location.href = 'https://aton.riders.agency/final/';
 });
 
 reloadPage.addEventListener('click', () => {
