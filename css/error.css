@@ -1,0 +1,122 @@
+.error-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    background: rgba(33, 33, 33, 0.60);
+    backdrop-filter: blur(6.5px);
+}
+
+.error-container {
+    width: 35rem;
+    height: 20.75rem;
+    background: radial-gradient(circle at bottom, #242A2E, #181A1D);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+
+.error-text-container {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error-h1 {
+    color: #EEE1D3;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    margin: 0;
+}
+
+.error-p {
+    color: #EEE1D3;
+    text-align: center;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin: 1.25rem 0 0 0;
+}
+
+.error-button {
+    display: flex;
+    padding: 1rem 3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3.56rem;
+    background: #D4AB6E;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin: 2.5rem 0 0 0;
+}
+
+.error-container-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .error-container {
+        height: 18.3rem;
+    }
+
+    .error-h1 {
+        font-size: 1.75rem;
+    }
+
+    .error-p {
+        font-size: 1.125rem;
+    }
+
+    .error-button {
+        font-size: 1.125rem;
+        margin: 2rem 0 0 0;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .error-container {
+        width: 94%;
+        height: 30%;
+    }
+
+    .error-h1 {
+        font-size: 6.5vw;
+    }
+
+    .error-p {
+        font-size: 4vw;
+    }
+
+    .error-button {
+        font-size: 4vw;
+        margin: 7% 0 0 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .error-container {
+        height: 40%;
+    }
+}
